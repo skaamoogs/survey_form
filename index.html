@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Skaamoogs Survey Form</title>
+    </head>
+
+    <main>
+        <header>
+            <h1 id="title">Skaamoogs Survey Form</h1>
+            <p id="description">Please fill the form below</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="input-div">
+                <label id="name-label" for="name" class="input-description">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" class="input" required="true">
+            </div>
+            <div class="input-div">
+                <label id="email-label" for="email" class="input-description">Email</label>
+                <input id="email" type="email" placeholder="Enter your Email" class="input" required="true">
+            </div>
+            <div class="input-div">
+                <label id="number-label" for="number" class="input-description">Age</label>
+                <input id="number" type="number" placeholder="Age" class="input" required="true" min="5" max="150">
+            </div>
+            <div class="input-div">
+                <label for="dropdown" class="input-description">What is your favorite programming language?</label>
+                <select id="dropdown" class="input" placeholder="Select an option">
+                <option value="default" label="Select an option" disabled selected></option>
+                <option>Python</option>
+                <option>Javascript</option>
+                <option>Ruby</option>
+                <option>C++</option>
+                <select>
+            </div>
+            <div>
+                <label for="contact" class="input-description">Please select your preferred contact method:</label><br>
+                <input type="radio" id="button1" name="contact" value="Phone">
+                <label for="button1" class="input-description" checked>Phone</label><br>
+                <input type="radio" id="button2" name="contact" value="Email">
+                <label class="input-description">Email</label><br>
+                <input type="radio" id="button3" name="contact" value="Social">
+                <label class="input-description">Social Networks</label>
+            </div>
+            <div class="input-div">
+                <label for="skill" class="input-description">What skills do you want to improve?:</label><br>
+                <input type="checkbox" id="skill1" name="skill" value="Algorithm">
+                <label for="skill1" class="input-description">Algorithms</label><br>
+                <input type="checkbox" id="skill2" name="skill" value="Backend">
+                <label for="skill2" class="input-description">Back-end Development</label><br>
+                <input type="checkbox" id="skill2" name="skill" value="Data Science">
+                <label for="skill2" class="input-description">Data Science</label>
+            </div>
+            <div>
+                <label for="comments" class="input-description">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Leave your comments here" rows="5"></textarea>
+            </div>
+            <div class="input-div">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</html>
